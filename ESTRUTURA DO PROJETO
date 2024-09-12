@@ -1,0 +1,24 @@
+análise_exploratória_dados_nvidia/
+│
+├── README.md
+├── .gitignore
+├── nvidia_data.db
+├── analise_exploratoria.ipynb  # ou analise_exploratoria.py
+└── dataset/
+    └── Nvidia.csv
+
+Descrição dos Arquivos e Diretórios
+README.md: Documento com a descrição do projeto, instruções para execução do código, e informações sobre as bibliotecas necessárias.
+
+.gitignore: Arquivo para especificar quais arquivos e pastas devem ser ignorados pelo Git.
+
+nvidia_data.db: Banco de dados SQLite criado a partir do CSV (opcional, se você optar por incluir o banco de dados).
+
+analise_exploratoria.ipynb ou analise_exploratoria.py: Arquivo contendo o código Python para a análise exploratória dos dados. Pode ser um notebook Jupyter (.ipynb) ou um script Python (.py).
+
+dataset/: Diretório para armazenar o arquivo CSV com os dados. Você pode adicionar o arquivo Nvidia.csv aqui, ou apenas fornecer o link para o dataset no README.md.
+
+Observações
+Se você estiver usando o SQLite, pode incluir o arquivo nvidia_data.db no repositório ou compartilhar o link para download.
+Certifique-se de que o README.md fornece instruções claras sobre como configurar e executar o projeto.
+O .gitignore deve estar configurado para evitar o versionamento de arquivos desnecessários.
