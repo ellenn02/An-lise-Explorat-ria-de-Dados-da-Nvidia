@@ -1,0 +1,38 @@
+# Ignorar arquivos e diretórios Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar ambientes virtuais
+venv/
+.env/
+
+# Ignorar arquivos de Jupyter Notebook
+*.ipynb_checkpoints
+
+# Ignorar arquivos de configuração do editor de texto
+*.swp
+*.swo
+
+# Ignorar dados grandes e arquivos temporários
+*.csv
+*.xlsx
+*.xls
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+
+Explicação dos Itens:
+__pycache__/ e *.pyc: Arquivos gerados pelo Python que não precisam ser versionados.
+venv/ e .env/: Diretórios de ambientes virtuais que podem conter dependências específicas e não devem ser incluídos.
+*.ipynb_checkpoints: Arquivos de checkpoints automáticos de Jupyter Notebook.
+*.swp e *.swo: Arquivos temporários criados por editores de texto como Vim.
+*.csv, *.xlsx, *.xls: Arquivos de dados grandes (você pode ajustar isso se desejar incluir dados no repositório, mas normalmente evita-se fazer isso).
+*.log: Arquivos de log gerados pelo sistema ou pelo código.
+.DS_Store e Thumbs.db: Arquivos de metadados criados pelo sistema operacional.
