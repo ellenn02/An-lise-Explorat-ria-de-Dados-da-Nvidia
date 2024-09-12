@@ -1,0 +1,15 @@
+# Análise Exploratória de Dados - Nvidia
+
+## Descrição do Projeto
+
+Este projeto realiza uma análise exploratória detalhada em um conjunto de dados da Nvidia. O objetivo é explorar e visualizar as principais características do dataset utilizando ferramentas como Python, Pandas, Seaborn e Matplotlib. A análise inclui a apresentação de insights e padrões importantes extraídos dos dados.
+
+## Instruções para Execução
+
+1. **Clonando o Repositório:**
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd <NOME_DO_REPOSITORIO>
+
+pip install pandas numpy matplotlib seaborn
