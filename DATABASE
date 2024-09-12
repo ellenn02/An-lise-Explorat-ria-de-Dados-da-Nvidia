@@ -1,0 +1,32 @@
+pip install sqlite3
+
+import pandas as pd
+import sqlite3
+
+# Carregar os dados do CSV
+url = 'https://drive.google.com/uc?id=1bRstkWsGKw3sb1F7rPxxULOF_BwlXYDx'
+data = pd.read_csv(url)
+
+# Conectar ao banco de dados SQLite (ou criar se não existir)
+conn = sqlite3.connect('nvidia_data.db')
+
+# Importar os dados para o banco de dados
+data.to_sql('nvidia', conn, if_exists='replace', index=False)
+
+# Fechar a conexão
+conn.close()
+
+import sqlite3
+
+# Conectar ao banco de dados SQLite
+conn = sqlite3.connect('nvidia_data.db')
+
+# Executar uma consulta
+query = "SELECT * FROM nvidia LIMIT 5"
+result = pd.read_sql_query(query, conn)
+
+# Exibir os resultados
+print(result)
+
+# Fechar a conexão
+conn.close()
